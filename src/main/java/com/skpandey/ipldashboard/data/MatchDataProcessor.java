@@ -33,7 +33,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
                     ? matchInput.getTeam2() : matchInput.getTeam1();
         } else {
             secondInningTeam = matchInput.getToss_winner();
-            firstInningTeam = secondInningTeam = matchInput.getToss_winner().equals(matchInput.getTeam1())
+            firstInningTeam = matchInput.getToss_winner().equals(matchInput.getTeam1())
                     ? matchInput.getTeam2() : matchInput.getTeam1();
         }
 
