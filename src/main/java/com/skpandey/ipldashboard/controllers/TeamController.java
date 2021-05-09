@@ -3,14 +3,13 @@ package com.skpandey.ipldashboard.controllers;
 import com.skpandey.ipldashboard.model.Team;
 import com.skpandey.ipldashboard.repostories.MatchRepository;
 import com.skpandey.ipldashboard.repostories.TeamRepository;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
     private TeamRepository teamRepository;
