@@ -28,7 +28,7 @@ export const MatchPage = () => {
       </div>
       <div>
         <h2>{teamName} matches in {year}</h2><br/>
-        { matches.map(match => <MatchDetailCard teamName={teamName} match={match} />) }
+        { matches.map(match => <MatchDetailCard key={match.id} teamName={teamName} match={match} />) }
       </div>
     </div>
   );
